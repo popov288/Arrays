@@ -27,23 +27,23 @@ void main()
 	double mean;
 	cout << "Введите размер массива ";
 	cin >> SIZE;
-	int max = M[0];
-	int min = M[0];
 
+	cout << "Введите элемент массива ";
 	for (i = 0; i < SIZE;i++)
 	{
-		cout << "Введите элемент массива ";
+
 		cin >> M[i];
 	}
+
 	for (i = 0; i < SIZE; i++)
 	{
-		cout << "arr [" << i << "]=" << M[i] << endl;
+		cout << "arr [" << i << "]=" << rand() % (100-50)+50 << endl;
 	}
 	cout << endl;
 
 	for (i = SIZE - 1;i >= 0; i--)
 	{
-		cout << "arr [" << i << "]=" << M[i] << endl;
+		cout << "arr [" << i << "]=" << rand() << endl;
 	}
 	cout << endl;
 
@@ -53,8 +53,9 @@ void main()
 	}
 	cout << "Сумма массива: " << sum << endl;
 	mean = sum / SIZE;
-	cout << "Среднее арифметическое: " << mean << endl;
-
+	cout << "Среднее арифметическое: " << sum / SIZE << endl;
+	int max = M[0];
+	int min = M[0];
 	for (i = 0; i < SIZE; i++)
 	{
 		if (M[i] > max)
